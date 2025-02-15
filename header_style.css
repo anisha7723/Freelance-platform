@@ -1,0 +1,73 @@
+/* Ensure the body has no margin or padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: purple;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 120px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    overflow: hidden; /* Prevents any overflow due to flex alignment */
+}
+
+/* Logo image adjustments */
+.logo img {
+    height: 100%; /* This ensures the logo fits within the header height */
+    max-height: 160px; /* Limits the height to fit header */
+    width: auto;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: goldenrod;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+/* Search bar and login button */
+.search-login {
+    display: flex;
+    align-items: center;
+}
+
+#search-bar {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#login-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #007bff;
+    cursor: pointer;
+}
+
+#login-btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
